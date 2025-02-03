@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Bean Boutique</title>
+    <link rel="stylesheet" href="order.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Jaro:opsz@6..72&family=Playwrite+HR+Lijeva:wght@100..400&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/d5f154908c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">BeanBoutique</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="coffee.html" class="dropbtn">Menu</a>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="order-btn">
+                    <a href="order.html" class="order-btn"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="close-btn" id="closeMenu">
+                    <i class="fas fa-times"></i> <!-- Font Awesome Close Icon -->
+                </div>
+                <ul class="mobile-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="coffee.html">Menu</a>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="order-page">
+       <div id="hero">
+         <h1>Order Your Favorite Coffee</h1>
+       </div>
+       
+
+        <!-- Coffee Menu Section -->
+        <div class="coffee-menu">
+            <h2>Coffee Menu</h2>
+            <div class="product-grid-container">
+                <button class="prev" onclick="moveSlide(-1, 'coffee')">&#10094;</button>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://i0.wp.com/teatiffin.in/wp-content/uploads/2020/12/Expresso-Coffee.png?fit=1260%2C708&ssl=1" alt="Espresso">
+                        <h2>Espresso</h2>
+                        <p>Rich and bold with a full body and chocolate notes.</p>
+                        <p><strong>$15.99</strong></p>
+                        <button class="add-to-cart" data-product="Espresso" data-price="15.99">Add to Cart</button>
+                    </div>
+        
+                    <div class="product-card">
+                        <img src="https://www.sessioncoffeedenver.com/wp-content/uploads/2024/04/Perfect-Espresso-Shot.jpg" alt="Espresso">
+                        <h2>Espresso Shot</h2>
+                        <p>Smooth and intense with a rich crema.</p>
+                        <p><strong>$17.89</strong></p>
+                        <button class="add-to-cart" data-product="Espresso" data-price="17.89">Add to Cart</button>
+                    </div>
+        
+                    <div class="product-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/1200px-Caffe_Latte_at_Pulse_Cafe.jpg" alt="Latte">
+                        <h2>Latte</h2>
+                        <p>Steamed milk with a rich and creamy delight.</p>
+                        <p><strong>$18.99</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="18.99">Add to Cart</button>
+                    </div>
+        
+                    <div class="product-card">
+                        <img src="https://media.istockphoto.com/id/603157720/photo/hot-cuppuccino-with-art-print.jpg?s=612x612&w=0&k=20&c=9_4pMkG1xlhi4GV5S-ydjjqZCtM7o0Za9C_vL7o-Cow=" alt="Cappuccino">
+                        <h2>Cappuccino</h2>
+                        <p>Frothy, rich, creamy, delightful taste.</p>
+                        <p><strong>$20.99</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="20.99">Add to Cart</button>
+                    </div>
+        
+                    <div class="product-card">
+                        <img src="https://www.thespruceeats.com/thmb/Hz677yfVdPECquUOekjv0b9yXTE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-mocha-4797918-step-04-599987714aec41aba02f1f870e900dd8.jpg" alt="Mocha">
+                        <h2>Mocha</h2>
+                        <p>Frothy and chocolatey delightful taste.</p>
+                        <p><strong>$15.99</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="15.99">Add to Cart</button>
+                    </div>
+        
+                    <div class="product-card">
+                        <img src="https://biteswithbri.com/wp-content/uploads/2021/11/ChaiLatte-blog-7-500x500.jpg" alt="Chai Latte">
+                        <h2>Chai Latte</h2>
+                        <p>Frothy and delicious blend of chai and latte.</p>
+                        <p><strong>$20.45</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="20.45">Add to Cart</button>
+                    </div>
+        
+
+                    
+                    <div class="product-card">
+                        <img src="https://majestycoffee.com/cdn/shop/articles/americano_b74a8154-454b-4f74-9a6c-95fbc4152ed3.jpg?v=1684048195" alt="Chai Latte">
+                        <h2>Americano</h2>
+                        <p>Rich and smooth taste of a classic Americano.</p>
+                        <p><strong>$8.99</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="8.99">Add to Cart</button>
+                    </div>
+
+
+                    
+                    <div class="product-card">
+                        <img src="https://www.redcupbeverage.com/media/k2/items/cache/f7a0a54c92471ac4480e727e4ccf93df_XL.jpg" alt="Chai Latte">
+                        <h2>Nitro Cold Brew</h2>
+                        <p>A refreshing and invigorating taste of a cold brew.</p>
+                        <p><strong>$21.99</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="21.99">Add to Cart</button>
+                    </div>
+
+                    
+                    <div class="product-card">
+                        <img src="https://www.bhf.org.uk/-/media/images/information-support/heart-matters/2024/july-2024/news/tea-bth/tea-good-for-you-ssnoexp-620x400.jpg?rev=292f32b6c1fa4ce2b98e6a7b80b4b152" alt="Chai Latte">
+                        <h2>Tea</h2>
+                        <p>A delicious and refreshing taste of a cup of tea.</p>
+                        <p><strong>$5.45</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="5.45">Add to Cart</button>
+                    </div>
+
+
+                    
+                    <div class="product-card">
+                        <img src="https://cookingwithcocktailrings.com/wp-content/uploads/2022/12/French-Hot-Chocolate-le-chocolate-chaud-35.jpg" alt="Chai Latte">
+                        <h2>Hot Chocolate</h2>
+                        <p>A rich and indulgent taste of a hot chocolate.</p>
+                        <p><strong>$20.45</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="20.45">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://www.savoryspiceshop.com/cdn/shop/files/PumpkinSpiceLatte_1200x800.jpg?v=1693930539" alt="Chai Latte">
+                        <h2>Pumpkin Spice Latte</h2>
+                        <p>A rich and indulgent taste of a pumpkin spice latte.</p>
+                        <p><strong>$20.99</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="20.99">Add to Cart</button>
+                    </div>
+
+
+                    <div class="product-card">
+                        <img src="https://th.bing.com/th/id/OIP.3lvRs4xAgYmLZeZ_dITmLAHaE8?rs=1&pid=ImgDetMain" alt="Chai Latte">
+                        <h2>Original Coffee</h2>
+                        <p>A rich and indulgent taste of a coffee.</p>
+                        <p><strong>$10.45</strong></p>
+                        <button class="add-to-cart" data-product="Latte" data-price="10.45">Add to Cart</button>
+                    </div>
+                    <!-- Add more products if needed -->
+                </div>
+                <button class="next" onclick="moveSlide(1, 'coffee')">&#10095;</button>
+            </div>
+        </div>
+        
+
+<!-- Breakfast Menu Section -->
+<div class="breakfast-menu">
+    <h2>Breakfast Menu</h2>
+    <div class="product-grid-container">
+        <button class="prev" onclick="moveSlide(-1, 'breakfast')">&#10094;</button>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://www.spendwithpennies.com/wp-content/uploads/2022/09/Avocado-Toast-SpendWithPennies-4-800x1200.jpg" alt="Avocado Toast">
+                <h2>Avocado Toast</h2>
+                <p>Fresh avocado spread on toasted sourdough.</p>
+                <p><strong>$10.99</strong></p>
+                <button class="add-to-cart" data-product="Avocado Toast" data-price="10.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://meikoandthedish.com/wp-content/uploads/2022/04/bacon-egg-and-cheese-sandwich-5.jpg" alt="Egg and Bacon Sandwich">
+                <h2>Egg & Bacon Sandwich</h2>
+                <p>A breakfast with scrambled eggs and crispy bacon.</p>
+                <p><strong>$12.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="12.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTiXV0M8mopHLJb04RX9mYhbEYyb4HMrXHA&s" alt="Egg and Bacon Sandwich">
+                <h2>Pancakes</h2>
+                <p>The perfect breakfast for a healthy morning.</p>
+                <p><strong>$9.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="9.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="https://www.telegraph.co.uk/content/dam/recipes/2022/02/25/TELEMMGLPICT000287059456_trans_NvBQzQNjv4BqAmsm3sDy0qA2_uLHpVQA2TXaG_3FkRG2WH2SGzlVXbs.jpeg?imwidth=680" alt="Egg and Bacon Sandwich">
+                <h2>Eggs Benedict</h2>
+                <p>A delicious and healthy breakfast option.</p>
+                <p><strong>$17.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="17.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2024/08/french-toast-recipe.jpg" alt="Egg and Bacon Sandwich">
+                <h2>French Toast</h2>
+                <p>A classic breakfast option that's easy to make.</p>
+                <p><strong>$10.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="10.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwnFP_Lg-fWegvqqVuU7BP2lZZ2It0rQ954Q&s" alt="Egg and Bacon Sandwich">
+                <h2>Smoothie Bowl</h2>
+                <p>A refreshing and healthy breakfast option.</p>
+                <p><strong>$12.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="12.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="https://www.seriouseats.com/thmb/TuOix8vfMlFnxZZCXHfYQKG8v2c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__04__20160418-american-omelet-ham-and-cheese-21-67641a326ac645ec81d03757a5478077.JPG" alt="Omellete">
+                <h2>Omelette</h2>
+                <p>A classic breakfast option that's easy to make.</p>
+                <p><strong>$15.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="15.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.makeaheadmealmom.com/wp-content/uploads/2023/08/BreakfastBurritos_Featured_compressed.jpg" alt="Egg and Bacon Sandwich">
+                <h2>Breakfast Burrito</h2>
+                <p>A breakfast with Buritto sauce and scrambled eggs.</p>
+                <p><strong>$20.45</strong></p>
+                <button class="add-to-cart" data-product="Breakfast Burrito" data-price="20.45">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="https://realfood.tesco.com/media/images/2726-Bagel-1-h-51d92834-3fd1-4c64-b6c2-8c00514d37d0-0-472x310.jpg" alt="Egg and Bacon Sandwich">
+                <h2>BagelCream Cheese</h2>
+                <p>A breakfast with bagelcream cheese with a crispy crust.</p>
+                <p><strong>$20.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="20.99">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.oYLeFtDXHTFyFS93zACuswHaJQ?rs=1&pid=ImgDetMain" alt="Egg and Bacon Sandwich">
+                <h2>Granola Bowl</h2>
+                <p>A breakfast made easy with a granola bowl.</p>
+                <p><strong>$12.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="12.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNtO0zVDfMADLOY9qCMuHF0HBoUBcPQz2cA&s" alt="Egg and Bacon Sandwich">
+                <h2>Fruit Salad</h2>
+                <p>The best breakfast with an energizing fruit salad.</p>
+                <p><strong>$26.99</strong></p>
+                <button class="add-to-cart" data-product="Egg & Bacon Sandwich" data-price="26.99">Add to Cart</button>
+            </div>
+        </div>
+        <button class="next" onclick="moveSlide(1, 'breakfast')">&#10095;</button>
+    </div>
+</div>
+
+<!-- Special Coffee Bean Products Section -->
+<div class="special-bean-products">
+    <h2>Special Coffee Bean Products</h2>
+    <div class="product-grid-container">
+        <button class="prev" onclick="moveSpecialBeanSlide(-1, 'special-bean')">&#10094;</button>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.yM5-0burnbzqT8iOPWk_bgHaD2?rs=1&pid=ImgDetMain" alt="Ethiopian Coffee Beans">
+                <h2>Ethiopian Coffee Beans</h2>
+                <p>Freshly roasted beans from the Ethiopia, known for their fruity and floral notes.</p>
+                <p><strong>$22.99</strong></p>
+                <button class="add-to-cart" data-product="Ethiopian Coffee Beans" data-price="22.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.zfA4WcPzhbvcOGscGrLv5AHaE8?rs=1&pid=ImgDetMain" alt="Colombian Coffee Beans">
+                <h2>Colombian Coffee Beans</h2>
+                <p>Medium roast with hints of caramel and citrus, perfect for everyday brewing.</p>
+                <p><strong>$19.99</strong></p>
+                <button class="add-to-cart" data-product="Colombian Coffee Beans" data-price="19.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/R.c00ada6c441afaa22ce516bcfac0a42a?rik=4oEf5jkbwNe8Mg&riu=http%3a%2f%2frealfoods.co.uk%2fProductImagesID%2f912_1.jpg&ehk=bVOVfd%2bHZ%2b7%2bh8LX6Vo393FhgArzA7%2b7dzl%2b2Oi6czQ%3d&risl=&pid=ImgRaw&r=0" alt="Kenyan Coffee Beans">
+                <h2>Kenyan Coffee Beans</h2>
+                <p>Known for their bright acidity and fruity flavors, perfect for a vibrant cup.</p>
+                <p><strong>$24.99</strong></p>
+                <button class="add-to-cart" data-product="Kenyan Coffee Beans" data-price="24.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.k2V8rQgyXp_V_s9xeR3n-wHaFW?rs=1&pid=ImgDetMain" alt="Brazilian Coffee Beans">
+                <h2>Brazilian Coffee Beans</h2>
+                <p>Rich and nutty with a smooth finish, ideal for espresso lovers all-day.</p>
+                <p><strong>$18.99</strong></p>
+                <button class="add-to-cart" data-product="Brazilian Coffee Beans" data-price="18.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.VJvOHt_wYrknkxotzqWEVAHaEo?rs=1&pid=ImgDetMain" alt="Sumatra Coffee Beans">
+                <h2>Sumatra Coffee Beans</h2>
+                <p>Earthy and full-bodied with a hint of spice, perfect for a bold brew products.</p>
+                <p><strong>$21.99</strong></p>
+                <button class="add-to-cart" data-product="Sumatra Coffee Beans" data-price="21.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.2KZXdGFFs7yP7zBSbghHAwHaHa?rs=1&pid=ImgDetMain" alt="Guatemalan Coffee Beans">
+                <h2>Guatemalan Coffee  </h2>
+                <p>A classic Balanced with chocolate and nutty notes, great for any time of day.</p>
+                <p><strong>$20.99</strong></p>
+                <button class="add-to-cart" data-product="Guatemalan Coffee Beans" data-price="20.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/R.d618511b867274a389f84ee21728dc02?rik=3lUAkzxGM%2bqfqg&pid=ImgRaw&r=0" alt="Costa Rican Coffee Beans">
+                <h2>Costa Rican Coffee</h2>
+                <p>Bright and clean with citrus and floral notes, ideal for a refreshing cup.</p>
+                <p><strong>$23.99</strong></p>
+                <button class="add-to-cart" data-product="Costa Rican Coffee Beans" data-price="23.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.V6C0m9lJcUHcdJheYXB-gwHaE8?rs=1&pid=ImgDetMain" alt="Yemen Coffee Beans">
+                <h2>Yemen Coffee Beans</h2>
+                <p>Complex and rich with a wine-like acidity, perfect for a unique experience.</p>
+                <p><strong>$29.99</strong></p>
+                <button class="add-to-cart" data-product="Yemen Coffee Beans" data-price="29.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/R.8b591971be70b5dd0722b16bfb18264d?rik=Io4348fGpDavVA&pid=ImgRaw&r=0" alt="Honduran Coffee Beans">
+                <h2>Honduran Coffee Beans</h2>
+                <p>Sweet and smooth with notes of chocolate and nuts, perfect for a cozy brew.</p>
+                <p><strong>$19.49</strong></p>
+                <button class="add-to-cart" data-product="Honduran Coffee Beans" data-price="19.49">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://www.machutravelperu.com/blog/wp-content/uploads/2022/01/peruvian-coffee.jpg" alt="Peruvian Coffee Beans">
+                <h2>Peruvian Coffee Beans</h2>
+                <p>Delicate and floral with a hint of citrus, ideal for a light and refreshing cup.</p>
+                <p><strong>$22.49</strong></p>
+                <button class="add-to-cart" data-product="Peruvian Coffee Beans" data-price="22.49">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.MHSq9iv-AW_iEQaOTfdLdQHaE8?rs=1&pid=ImgDetMain" alt="Mexican Coffee Beans">
+                <h2>Mexican Coffee Beans</h2>
+                <p>Balanced and smooth with chocolate and nutty flavors, great for any occasion.</p>
+                <p><strong>$20.49</strong></p>
+                <button class="add-to-cart" data-product="Mexican Coffee Beans" data-price="20.49">Add to Cart</button>
+            </div>
+            <!-- Additional special coffee bean cards can be added here -->
+        </div>
+        <button class="next" onclick="moveSpecialBeanSlide(1, 'special-bean')">&#10095;</button>
+    </div>
+</div>
+
+<!-- Pastries Menu Section -->
+<div class="pastries-menu">
+    <h2>Pastries Menu</h2>
+    <div class="product-grid-container">
+        <button class="prev" onclick="movePastriesSlide(-1, 'pastries')">&#10094;</button>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.6SE7CNryawct-mrE3LGCnwHaJ3?rs=1&pid=ImgDetMain" alt="Croissant">
+                <h2>Croissant</h2>
+                <p>Flaky, buttery pastry, perfect for pairing with your coffee.</p>
+                <p><strong>$4.99</strong></p>
+                <button class="add-to-cart" data-product="Croissant" data-price="4.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/R.b2bf236dd6d21730ae415a64b5200b71?rik=Qqfw%2b7py3qSzNA&pid=ImgRaw&r=0" alt="Chocolate Chip Cookie">
+                <h2>Chocolate Chip Cookie</h2>
+                <p>Warm and gooey, packed with delicious chocolate chips.</p>
+                <p><strong>$3.49</strong></p>
+                <button class="add-to-cart" data-product="Chocolate Chip Cookie" data-price="3.49">Add to Cart</button>
+            </div>
+            
+
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.tJIb35mPCNwvEfhfGI9JdQHaLH?w=680&h=1020&rs=1&pid=ImgDetMain" alt="Blueberry Muffin">
+                <h2>Blueberry Muffin</h2>
+                <p>Moist and fluffy, bursting with fresh blueberries.</p>
+                <p><strong>$2.99</strong></p>
+                <button class="add-to-cart" data-product="Blueberry Muffin" data-price="2.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://littlebitrecipes.com/wp-content/uploads/2023/01/small-batch-cinnamon-rolls-sq.jpg" alt="Cinnamon Roll">
+                <h2>Cinnamon Roll</h2>
+                <p>Sweet and sticky, topped with creamy icing.</p>
+                <p><strong>$3.99</strong></p>
+                <button class="add-to-cart" data-product="Cinnamon Roll" data-price="3.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/R.a43c70e3bc4dffd8bbf5e76e93f3f309?rik=4uHhmlybhP6WxQ&pid=ImgRaw&r=0" alt="Almond Croissant">
+                <h2>Almond Croissant</h2>
+                <p>Filled with almond paste and topped with sliced almonds.</p>
+                <p><strong>$5.49</strong></p>
+                <button class="add-to-cart" data-product="Almond Croissant" data-price="5.49">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.PClulHrOJ44_hsEXidn-pQHaE4?rs=1&pid=ImgDetMain" alt="Macaron">
+                <h2>Macaron</h2>
+                <p>Delicate and colorful, with a creamy filling.</p>
+                <p><strong>$1.99</strong></p>
+                <button class="add-to-cart" data-product="Macaron" data-price="1.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/R.1dea35923bc72aae0bdb819862ab33fc?rik=BkdXgjs4Z7AXyg&pid=ImgRaw&r=0" alt="Cheesecake">
+                <h2>Cheesecake</h2>
+                <p>Rich and creamy, with a graham cracker crust.</p>
+                <p><strong>$6.99</strong></p>
+                <button class="add-to-cart" data-product="Cheesecake" data-price="6.99">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://www.recipetineats.com/wp-content/uploads/2021/06/French-Lemon-Tart_5-main.jpg?resize=71" alt="Lemon Tart">
+                <h2>Lemon Tart</h2>
+                <p>Tangy and sweet, with a buttery crust and lemon filling.</p>
+                <p><strong>$5.99</strong></p>
+                <button class="add-to-cart" data-product="Lemon Tart" data-price="5.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://natashaskitchen.com/wp-content/uploads/2018/05/Banana-Bread-Recipe-6-1024x1536.jpg" alt="Banana Bread">
+                <h2>Banana Bread</h2>
+                <p>Moist and flavorful, made with ripe bananas and walnuts.</p>
+                <p><strong>$4.49</strong></p>
+                <button class="add-to-cart" data-product="Banana Bread" data-price="4.49">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://www.marcellinaincucina.com/wp-content/uploads/2022/07/raspberry-danish-featured.jpg" alt="Raspberry Danish">
+                <h2>Raspberry Danish</h2>
+                <p>Flaky pastry filled with sweet raspberry jam.</p>
+                <p><strong>$3.99</strong></p>
+                <button class="add-to-cart" data-product="Raspberry Danish" data-price="3.99">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://www.willcookforsmiles.com/wp-content/uploads/2020/10/Chocolate-Pecan-Pie-5.jpg" alt="Pecan Pie">
+                <h2>Pecan Pie</h2>
+                <p>Rich and nutty, with a gooey filling and crunchy pecans.</p>
+                <p><strong>$6.49</strong></p>
+                <button class="add-to-cart" data-product="Pecan Pie" data-price="6.49">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/R.ab9bdd32f6cffe5b1dc3a9f64a46be99?rik=C6TZqIxCAlNJQw&pid=ImgRaw&r=0" alt="Apple Strudel">
+                <h2>Apple Strudel</h2>
+                <p>Classic dessert with spiced apples in a flaky pastry.</p>
+                <p><strong>$5.49</strong></p>
+                <button class="add-to-cart" data-product="Apple Strudel" data-price="5.49">Add to Cart</button>
+            </div>
+        </div>
+        <button class="next" onclick="movePastriesSlide(1, 'pastries')">&#10095;</button>
+    </div>
+</div>
+
+    <div id="cart-payment">
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+            <h3>Your Cart</h3>
+            <ul id="cart-items">
+                <li>No items in cart</li>
+            </ul>
+            <button id="checkout">Checkout</button>
+        </div>
+
+        <!-- Payment Section -->
+       <!-- Payment Section -->
+<div class="payment-section hidden" id="payment-section">
+    <h3>Payment</h3>
+    <div class="payment-form">
+        <label for="currency">Select Currency:</label>
+        <select id="currency">
+            <option value="USD">USD - Dollars</option>
+            <option value="GHS">GHS - Cedis</option>
+        </select>
+
+        <div id="bill-details" class="bill-details">
+            <h4>Bill Details</h4>
+            <ul id="bill-items"></ul>
+            <div id="total-price">
+                <strong>Total: $0.00</strong>
+            </div>
+        </div>
+        <button class="payment-submit" id="payment-submit">Pay</button>
+    </div>
+</div>
+    </div>
+        <!-- Delivery/Pickup Section -->
+        <div class="delivery-section">
+            <label for="delivery">Choose Delivery Method:</label>
+            <select id="delivery">
+                <option value="pickup">Pick-up</option>
+                <option value="delivery">Delivery</option>
+            </select>
+
+            <!-- Pickup Pop-up -->
+            <div id="pickup-popup" class="popup">
+                <div class="popup-content">
+                    <h3>Your order is almost ready! 😄☕</h3>
+                    <img src="https://th.bing.com/th/id/OIP.qMyAk_O6gZr96j_Cc_c7-gHaE8?rs=1&pid=ImgDetMain" alt="Coffee Image" />
+                    <p>Enjoy your coffee soon! 😊</p>
+                    <button id="close-pickup-popup">X</button>
+                </div>
+            </div>
+
+            <!-- Delivery Section -->
+            <div id="delivery-section" style="display: none;">
+                <label for="location">Enter Your Location:</label>
+                <input type="text" id="location" placeholder="Your Address">
+                <button id="done-location">Done</button>
+            </div>
+
+            <!-- Delivery Pop-up -->
+            <div id="delivery-popup" class="popup">
+                <div class="popup-content">
+                    <h3>Your delivery is on the way! Hold on tight! 🚚💨</h3>
+                    <img src="https://th.bing.com/th/id/OIP.otGa-EOpGuxeuuQve2FB-wHaE8?rs=1&pid=ImgDetMain" alt="Delivery Image" />
+                    <div id="map-placeholder">
+                        <p>Your location is set...</p>
+                    </div>
+                    <button id="close-delivery-popup">X</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discount Section -->
+        <div class="discount-ad" id="discount-ad">
+            <img src="https://th.bing.com/th/id/OIP.oiDnlj1AnTxgHjD1jB5A3wHaHa?rs=1&pid=ImgDetMain" alt="Discount Offer" class="discount-image">
+            <p>Special Discounts Available! Check Them Out!</p>
+            <button id="close-discount">Close</button>
+        </div>
+    </section>
+
+    <footer id="cs-footer-308">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="logo.png" alt="logo" width="178" height="32">
+                </a>
+    
+                <p class="cs-text">
+        Welcome to Bean Boutique Coffee Shop, where passion meets perfection in every cup. We carefully source our beans from sustainable farms worldwide and roast them to bring out their unique flavors and aromas. Visit us for an exceptional coffee experience.
+    </p>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Sitemap</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="about.html">About</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="coffee.html">Coffee Shop</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="order.html"><i class="fas fa-shopping-cart"></i>&nbsp; Order</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Contact Info -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+                    <a class="cs-nav-link cs-phone" href="#">(123) 456-7890</a>
+                </li> 
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+                    <a class="cs-nav-link cs-email" href="mailto:info@codestitch.com">info@beanboutique.shop</a>
+                </li>
+                <li class="cs-nav-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+                    <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener">
+                        123 Avenue Street<br> Oak Harbor, WA 98101
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href=""> Bean Boutique Coffee Shop </a></span>
+        </div>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>

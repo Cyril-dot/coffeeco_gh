@@ -1,0 +1,596 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    font-family: Playwrite HR Lijeva;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+
+}
+
+.navbar .logo a {
+    color: #ff6a3e;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ff6a3e;
+}
+
+.nav-links a:active {
+    color: #ff6a3e;
+}
+
+.order-btn {
+    color: #ff6a3e;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.order-btn a {
+    color: #ff6a3e;
+    padding: 5px;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.order-btn:hover {
+    background-color: #ff6a3e;
+}
+
+.order-btn:active {
+    background-color: #ff6a3e;
+}
+
+.order-btn a:active {
+    color: white;
+}
+
+.order-btn a:hover {
+    color: white;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.mobile-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-nav-links li {
+    margin: 20px 0;
+}
+
+.mobile-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Close Button for Mobile Menu */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-btn i {
+    font-size: 30px;
+}
+
+/* Close Menu Link inside Mobile Menu */
+.close-menu {
+    margin-top: 20px;
+}
+
+.close-menu a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.close-menu a:hover {
+    color: #ff0000;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        width: 89%;
+    }
+
+    /* Dropdown Menu on Mobile */
+    .mobile-nav-links .dropdown-content {
+        position: static;
+        background-color: transparent;
+        width: 100%;
+        display: none;
+        text-align: left;
+    }
+
+    .mobile-nav-links .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .mobile-nav-links .dropdown-content a {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+#about-section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#about-section:hover {
+    transform: scale(1.01);
+    border: 2px solid #ff6a3e;
+    border-radius: 10px 200px 10px 200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    color: white;
+}
+
+.text-container {
+    padding: 20px;
+    text-align: left;
+    width: 700px;
+}
+
+.text-container h1, .story h2, .mission h2, .offerings h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: Playwrite HR Lijeva;
+}
+
+.text-container p, .story p, .mission p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-about {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-about img {
+    width: 300px;
+    height: 200px;
+    background-color: #007bff;
+    border-radius: 10px 100px 10px 100px;
+}
+
+.image-about img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 3px solid #ffffff;
+}
+
+.about-content {
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.story {
+    width: 1000px;
+    align-items: center;
+    text-align: justify;
+    margin-left: 90px;
+    transition: appearance 0.3s ease-in-out;
+}
+
+.story-image, .mission-image {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.story:hover .story-image, .mission:hover .mission-image {
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.story-image img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px 90px 5px 90px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.story-image img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.story-image i {
+    color: #000000;
+    font-size: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mission {
+    width: 1000px;
+    text-align: justify;
+    margin-left: 90px;
+    transition: 0.3s ease-in-out;
+}
+
+.mission-image {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.mission:hover .mission-image {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mission-image .image1 {
+    width: 300px;
+    border: 1px solid #ff6a3e;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.mission-image img {
+    width: 100%;
+    height: 240px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission-image p {
+    color: #ff6a3e;
+    font-family: Playwrite HR Lijeva;
+}
+
+.offerings {
+    text-align: justify;
+    margin-left: 90px;
+    transition: 0.3s ease-in-out;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.offerings ul li {
+    color: #000000;
+    font-family: Playwrite HR Lijeva;
+    margin-bottom: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #about-section {
+        flex-direction: column;
+    }
+
+    .text-container, .story, .mission {
+        width: 90%;
+        margin-left: 0;
+    }
+    .offerings{
+        margin-left: 0;
+    }
+
+    .image-about {
+        width: 100%;
+    }
+
+    .image-about img {
+        width: 100%;
+        height: auto;
+    }
+    .mission:hover .mission-image, .story:hover .story-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mission-image .image1 {
+        width: 220px;;
+    }
+    .story-image img, .mission-image img {
+        width: 220px;
+        height: 200px;
+    }
+    .story-image i {
+        font-size: 40px;
+        padding: 10px;
+        transform: rotate(90deg);
+    }
+
+    .text-container h1, .story h2, .mission h2, .offerings h2 {
+        font-size: 2rem;
+    }
+
+    .text-container p, .story p, .mission p {
+        font-size: 1rem;
+    }
+    .offerings ul li {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-right: 10px;
+    }
+}
+
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-footer-308 {
+        padding: var(--sectionPadding);
+        background-color: #1a1a1a;
+        /* Navigation Links */
+    }
+    #cs-footer-308 .cs-container {
+        width: 100%;
+        /* reset on desktop */
+        max-width: 43.75rem;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+    #cs-footer-308 .cs-logo-group {
+        /* takes up all the space, lets the other ul's wrap below it */
+        width: 100%;
+        position: relative;
+    }
+    
+    #cs-footer-308 .cs-logo {
+        width:40px;
+        align-items: center;
+        height: 35px;
+        margin-left: 100px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        padding-bottom: 50px;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    #cs-footer-308 .cs-logo-img {
+        width: 100%;
+        height: auto;
+    }
+    #cs-footer-308 .cs-logo-img.dark {
+        display: none;
+    }
+    #cs-footer-308 .cs-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        width: 78%;
+        /* changes to 305px at desktop */
+        max-width: 26.25rem;
+        color: white;
+    }
+    #cs-footer-308 .cs-nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    #cs-footer-308 .cs-nav-li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #cs-footer-308 .cs-header {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color:white;
+        position: relative;
+        display: block;
+    }
+    #cs-footer-308 .cs-nav-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        color: white;
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s;
+    }
+    #cs-footer-308 .cs-nav-link:before {
+        /* underline */
+        content: "";
+        width: 0%;
+        height: 0.125rem;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+    #cs-footer-308 .cs-nav-link:hover {
+        color: white;
+    }
+    #cs-footer-308 .cs-nav-link:hover:before {
+        width: 100%;
+    }
+    #cs-footer-308 .cs-icon {
+        width: 1.5rem;
+        height: auto;
+        margin-right: 0.75rem;
+    }
+    #cs-footer-308 .cs-bottom {
+        max-width: 80rem;
+        margin: auto;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #484848;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cs-footer-308 .cs-copyright,
+    #cs-footer-308 .cs-copyright-link {
+        font-size: 1rem;
+        line-height: 1.5em;
+        color: white;
+    }
+    #cs-footer-308 .cs-copyright-link {
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    #cs-footer-308 .cs-copyright-link:hover {
+        color: white;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cs-footer-308 .cs-container {
+        row-gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 2.5rem;
+    }
+    #cs-footer-308 .cs-nav {
+        width: auto;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-footer-308 .cs-container {
+        max-width: 80rem;
+        flex-wrap: nowrap;
+        /* align everything to the right */
+        justify-content: flex-end;
+        column-gap: 5.25rem;
+    }
+    #cs-footer-308 .cs-logo-group {
+        width: 30%;
+        max-width: 24.1875rem;
+        /* pushes away from everything to the right */
+        margin-right: auto;
+    }
+    #cs-footer-308 .cs-text {
+        width: 100%;
+    }
+}
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 100%;
+ }
+ .cs-logo-group {
+    margin-top: 20px;
+    padding-top: 20px;
+ }
+ .cs-nav-li .cs-header {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.cs-copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}

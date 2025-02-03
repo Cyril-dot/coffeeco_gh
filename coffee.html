@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Gallery</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Yuji+Mai&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">BeanBoutique</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="coffee.html" class="drop">Menu</a>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="order-btn">
+                <a href="#" class="order-btn"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+        </ul>
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="close-btn" id="closeMenu">
+                <i class="fas fa-times"></i> <!-- Font Awesome Close Icon -->
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Menu</a>
+                </li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+    <div class="pastry-menu">
+       <p> Coffee Menu</p>
+    </div>
+    <div class="gallery-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="gallery">
+            <!-- Coffee Item 1 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://i0.wp.com/teatiffin.in/wp-content/uploads/2020/12/Expresso-Coffee.png?fit=1260%2C708&ssl=1" alt="Espresso">
+                </div>
+                <div class="text-container">
+                    <h1>Espresso</h1>
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+            
+            <!-- Coffee Item 2 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://www.sessioncoffeedenver.com/wp-content/uploads/2024/04/Perfect-Espresso-Shot.jpg" alt="Latte">
+                </div>
+                <div class="text-container">
+                    <h1>Espresso Shot</h1>
+                </div>
+            </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+            <!-- Coffee Item 3 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/1200px-Caffe_Latte_at_Pulse_Cafe.jpg" alt="Cappuccino">
+                </div>
+                <div class="text-container">
+                    <h1>Latte</h1>
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+            <!-- Coffee Item 4 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://media.istockphoto.com/id/603157720/photo/hot-cuppuccino-with-art-print.jpg?s=612x612&w=0&k=20&c=9_4pMkG1xlhi4GV5S-ydjjqZCtM7o0Za9C_vL7o-Cow=" alt="Mocha">
+                </div>
+                <div class="text-container">
+                    <h1>Cappuccino</h1>
+                   
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+            <!-- Coffee Item 5 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://www.thespruceeats.com/thmb/Hz677yfVdPECquUOekjv0b9yXTE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-mocha-4797918-step-04-599987714aec41aba02f1f870e900dd8.jpg" alt="Cappuccino">
+                </div>
+                <div class="text-container">
+                    <h1>Mocha</h1>
+                
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+            <!-- Coffee Item 6 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://biteswithbri.com/wp-content/uploads/2021/11/ChaiLatte-blog-7-500x500.jpg" alt="Latte Art">
+                </div>
+                <div class="text-container">
+                    <h1>Chai Latte</h1>
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+            <!-- Coffee Item 7 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://majestycoffee.com/cdn/shop/articles/americano_b74a8154-454b-4f74-9a6c-95fbc4152ed3.jpg?v=1684048195" alt="Flat White">
+                </div>
+                <div class="text-container">
+                    <h1>Americano</h1>
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+            <!-- Coffee Item 8 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://www.redcupbeverage.com/media/k2/items/cache/f7a0a54c92471ac4480e727e4ccf93df_XL.jpg" alt="Macchiato">
+                </div>
+                <div class="text-container">
+                    <h1>Nitro Cold Brew</h1>
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+            <!-- Coffee Item 9 -->
+            <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://cookingwithcocktailrings.com/wp-content/uploads/2022/12/French-Hot-Chocolate-le-chocolate-chaud-35.jpg" alt="Espresso Shot">
+                </div>
+                <div class="text-container">
+                    <h1>Hot Chocolate</h1>
+                   
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+              <!-- Coffee Item 9 -->
+              <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://www.bhf.org.uk/-/media/images/information-support/heart-matters/2024/july-2024/news/tea-bth/tea-good-for-you-ssnoexp-620x400.jpg?rev=292f32b6c1fa4ce2b98e6a7b80b4b152" alt="Espresso Shot">
+                </div>
+                <div class="text-container">
+                    <h1>Tea</h1>
+                   
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+
+              <!-- Coffee Item 9 -->
+              <div class="gallery-item">
+                <div class="items">
+                <div class="image-container">
+                    <img src="https://www.savoryspiceshop.com/cdn/shop/files/PumpkinSpiceLatte_1200x800.jpg?v=1693930539" alt="Espresso Shot">
+                </div>
+                <div class="text-container">
+                    <h1>Pumpkin Spice Latte</h1>
+                   
+                </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Order</a>
+                </div>
+            </div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="pastry-menu">
+        <p>Pastry and Bread Menu</p>
+    </div>
+    <div class="slider-container">
+        <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="slider">
+            <!-- Pastry Item 1 -->
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001500_10-16f94ee.jpg" alt="Scone">
+                    </div>
+                    <div class="info-box">
+                        <h1>Scone</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+         
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://assets.zuckerjagdwurst.com/u4q97pkqszcdxj62j8adg1z9xdpz/1110/701/55/true/center/R870-Vegane-Schoko-Croissants-01.jpg?animated=false" alt="Croissant">
+                    </div>
+                    <div class="info-box">
+                        <h1>Croissant</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZODGiVb_vgqaEo4Rm-DTgXvgIX_IK7Y0S6A&s" alt="Chocolate Brioche">
+                    </div>
+                    <div class="info-box">
+                        <h1>Chocolate Brioche</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsYcs088lp4GhFarWkqE6cT3d3ymsjlad2yg&s" alt="Fruit Danish">
+                    </div>
+                    <div class="info-box">
+                        <h1>Fruit Danish</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://cbimg.cookinbreak.com/recettes/B2IPir3JtJpz.jpg" alt="Pain au Chocolat">
+                    </div>
+                    <div class="info-box">
+                        <h1>Pain au Chocolat</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://www.allrecipes.com/thmb/3BEjl5t-1wol60cEIiW3r_BzaYY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-7906-chocolate-chip-muffins-DDMFS-4x3-69048f49ea934213a0d1a0059b85fd9b.jpg" alt="Muffin">
+                    </div>
+                    <div class="info-box">
+                        <h1>Muffin</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://static.toiimg.com/thumb/76545839.cms?imgsize=462529&width=800&height=800" alt="Baguette">
+                    </div>
+                    <div class="info-box">
+                        <h1>Baguette</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://recipecontent.fooby.ch/18174_3-2_1920-1280.jpg" alt="Ciabatta">
+                    </div>
+                    <div class="info-box">
+                        <h1>Ciabatta</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://www.sophisticatedgourmet.com/wp-content/uploads/2016/03/new-york-soft-pretzel-recipe-2-scaled.jpg" alt="Pretzel">
+                    </div>
+                    <div class="info-box">
+                        <h1>Pretzel</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://scandinaviancookbook.com/wp-content/uploads/2023/04/DSC04557.jpg" alt="Cinnamon Roll">
+                    </div>
+                    <div class="info-box">
+                        <h1>Cinnamon Roll</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+            
+        
+            <!-- Pastry Item 2 -->
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://www.simplystacie.net/wp-content/uploads/2016/04/Sticky-Banana-croissants-with-crushed-nuts-tall1-3-500x375.jpg" alt="Croissant">
+                    </div>
+                    <div class="info-box">
+                        <h1>Banna Croissant</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+        
+            <!-- Pastry Item 3 -->
+            <div class="slider-item">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://www.rockrecipes.com/wp-content/uploads/2012/12/DSC_0868-1.jpg" alt="Raisin Bread">
+                    </div>
+                    <div class="info-box">
+                        <h1>Raisin Bread</h1>
+                    </div>
+                </div>
+                <div class="order-box">
+                    <a href="#" class="btn btn-order">Order</a>
+                </div>
+            </div>
+    
+        </div>
+        <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+   
+    <div class="pastry-menu">
+        <p>Breakfast Menu</p>
+    </div>
+    <div class="carousel-container">
+        <button class="prev-button" onclick="moveCarouselPrev()">&#10094;</button>
+        <div class="carousel">
+            <!-- Carousel Slide 1 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc9AIvAc6dkD5GTVhVASi91F4Jc4n7AbOFhw&s" alt="Avocado Toast">
+                    </div>
+                    <div class="text-container">
+                        <h1>Avocado Toast</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+            
+            <!-- Carousel Slide 2 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTiXV0M8mopHLJb04RX9mYhbEYyb4HMrXHA&s" alt="Pancakes">
+                    </div>
+                    <div class="text-container">
+                        <h1>Pancakes</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 3 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://www.telegraph.co.uk/content/dam/recipes/2022/02/25/TELEMMGLPICT000287059456_trans_NvBQzQNjv4BqAmsm3sDy0qA2_uLHpVQA2TXaG_3FkRG2WH2SGzlVXbs.jpeg?imwidth=680" alt="Eggs Benedict">
+                    </div>
+                    <div class="text-container">
+                        <h1>Eggs Benedict</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 4 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://cdn.loveandlemons.com/wp-content/uploads/2024/08/french-toast-recipe.jpg" alt="French Toast">
+                    </div>
+                    <div class="text-container">
+                        <h1>French Toast</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 5 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwnFP_Lg-fWegvqqVuU7BP2lZZ2It0rQ954Q&s" alt="Smoothie Bowl">
+                    </div>
+                    <div class="text-container">
+                        <h1>Smoothie Bowl</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 6 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://www.seriouseats.com/thmb/TuOix8vfMlFnxZZCXHfYQKG8v2c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__04__20160418-american-omelet-ham-and-cheese-21-67641a326ac645ec81d03757a5478077.JPG" alt="Omelette">
+                    </div>
+                    <div class="text-container">
+                        <h1>Omelette</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 7 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://www.makeaheadmealmom.com/wp-content/uploads/2023/08/BreakfastBurritos_Featured_compressed.jpg" alt="Breakfast Burrito">
+                    </div>
+                    <div class="text-container">
+                        <h1>Breakfast Burrito</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 8 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://realfood.tesco.com/media/images/2726-Bagel-1-h-51d92834-3fd1-4c64-b6c2-8c00514d37d0-0-472x310.jpg" alt="BagelCream Cheese">
+                    </div>
+                    <div class="text-container">
+                        <h1>BagelCream Cheese</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 9 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://beginwithbalance.com/wp-content/uploads/2024/03/Yogurt-Granola-Bowls-1.jpg" alt="Granola Bowl">
+                    </div>
+                    <div class="text-container">
+                        <h1>Granola Bowl</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 10 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNtO0zVDfMADLOY9qCMuHF0HBoUBcPQz2cA&s" alt="Fruit Salad">
+                    </div>
+                    <div class="text-container">
+                        <h1>Fruit Salad</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 11 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://twohealthykitchens.com/wp-content/uploads/2016/02/Double-Chocolate-Muffins-Horiz-in-Muffin-Cups-Watermarked.jpg" alt="Muffins">
+                    </div>
+                    <div class="text-container">
+                        <h1>Fresh Muffins</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 12 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://cdn.loveandlemons.com/wp-content/uploads/2021/05/chia-seed-pudding.jpg" alt="Chia Pudding">
+                    </div>
+                    <div class="text-container">
+                        <h1>Chia Pudding</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 13 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/03/smoothies.jpg?quality=82&strip=1" alt="Smoothie">
+                    </div>
+                    <div class="text-container">
+                        <h1>Fruit Smoothie</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 14 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZOl2KXvIYOQk4t-qwA-pfkiJNOyY23x74XQ&s" alt="Waffles">
+                    </div>
+                    <div class="text-container">
+                        <h1>Waffles</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Carousel Slide 15 -->
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <div class="image-container">
+                        <img src="https://t4.ftcdn.net/jpg/02/09/54/11/360_F_209541147_EeuElTsWuQBH7IbNEEOrb0BqMGqsfI4k.jpg" alt="Cereal with Milk">
+                    </div>
+                    <div class="text-container">
+                        <h1>Cereal with Milk</h1>
+                    </div>
+                </div>
+                <div class="order-button-container">
+                    <a href="#" class="order-button">Order</a>
+                </div>
+            </div>
+        </div>
+        <button class="next-button" onclick="moveCarouselNext()">&#10095;</button>
+    </div>
+
+    
+
+
+    <div class="coffee-menu">
+        <p>Special Coffee</p>
+        <p>A curated selection of our unique coffee blends and single-origin brews.</p>
+    </div>
+    
+    <div class="coffee-carousel-container">
+        <button class="prev-coffee-btn" onclick="moveCoffeeCarouselPrev()">&#10094;</button>
+        <div class="coffee-carousel">
+            <!-- Coffee Carousel Slide 1 -->
+            <div class="coffee-carousel-slide">
+                <div class="coffee-slide-content">
+                    <div class="coffee-image-container">
+                        <img src="https://frontiercoffeeroasters.com/cdn/shop/articles/small_batch_roasted_ethiopian_yirgacheffe_coffee_in_a_colonial_pattern_cup.png?v=1732754370" alt="Espresso">
+                    </div>
+                    <div class="coffee-text-container">
+                        <h1>Ethiopian Yirgacheffe</h1>
+                    </div>
+                </div>
+                <div class="coffee-order-button-container">
+                    <a href="#" class="coffee-order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Coffee Carousel Slide 2 -->
+            <div class="coffee-carousel-slide">
+                <div class="coffee-slide-content">
+                    <div class="coffee-image-container">
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e7873e440243ae10bc8093/1648156507916-IL0JHZPK9PZYQQGKCVE1/lacas_coffee_0322_0332+2+1.jpg?format=1500w" alt="Cappuccino">
+                    </div>
+                    <div class="coffee-text-container">
+                        <h1>Colombian Supremo</h1>
+                    </div>
+                </div>
+                <div class="coffee-order-button-container">
+                    <a href="#" class="coffee-order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Coffee Carousel Slide 3 -->
+            <div class="coffee-carousel-slide">
+                <div class="coffee-slide-content">
+                    <div class="coffee-image-container">
+                        <img src="https://down-my.img.susercontent.com/file/fea952d06c7fab199fb5f2ad4d4f51d1" alt="Cold Brew">
+                    </div>
+                    <div class="coffee-text-container">
+                        <h1>Panama Geisha</h1>
+                    </div>
+                </div>
+                <div class="coffee-order-button-container">
+                    <a href="#" class="coffee-order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Coffee Carousel Slide 4 -->
+            <div class="coffee-carousel-slide">
+                <div class="coffee-slide-content">
+                    <div class="coffee-image-container">
+                        <img src="https://bluegoose.coffee/cdn/shop/products/organic-peruvian-eco-coffee-pods-609536_1200x1200.jpg?v=1675952416" alt="Latte">
+                    </div>
+                    <div class="coffee-text-container">
+                        <h1>Peruvian Organic</h1>
+                    </div>
+                </div>
+                <div class="coffee-order-button-container">
+                    <a href="#" class="coffee-order-button">Order</a>
+                </div>
+            </div>
+    
+            <!-- Coffee Carousel Slide 5 -->
+            <div class="coffee-carousel-slide">
+                <div class="coffee-slide-content">
+                    <div class="coffee-image-container">
+                        <img src="https://cdn11.bigcommerce.com/s-9wlsnri4bn/images/stencil/original/image-manager/rk-kona-res-920x600-min.jpg?t=1719374404" alt="Mocha">
+                    </div>
+                    <div class="coffee-text-container">
+                        <h1>Hawaiian Kona</h1>
+                    </div>
+                </div>
+                <div class="coffee-order-button-container">
+                    <a href="#" class="coffee-order-button">Order</a>
+                </div>
+            </div>
+        </div>
+        <button class="next-coffee-btn" onclick="moveCoffeeCarouselNext()">&#10095;</button>
+    </div>
+    
+
+<div class="auth-container">
+    <div class="auth-image">
+        <img src="https://m.media-amazon.com/images/I/71lyIc5Do5L._AC_UF894,1000_QL80_.jpg" alt="Login Image">
+    </div>
+    <div class="auth-form">
+        <h2>Login / Sign Up</h2>
+        <form id="authForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+              <div class="remember-forgot">
+                <label for="remember-me">Remember Me</label>  <input type="checkbox" id="remember-me" name="remember-me">
+              </div>
+            </div>
+            <div class="form-footer">
+                <a href="#" class="forgot-password">Forgot Password?</a> &nbsp;&nbsp;
+             <a href="#" class="signup-link">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<section id="hero-229">
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <span class="cs-topper">Brewing Equipment</span>
+            <h1 class="cs-title">Brew Like a Pro with the Best Gear</h1>
+            <p class="cs-text">
+                Whether you're an experienced brewer or just starting, the right brewing equipment can elevate your craft. From fermenters to kettles, discover essential tools for perfect brews every time.
+            </p>
+            <div class="cs-button-group">
+                <a href="equipment.html" class="cs-button-transparent cs-button">
+                    <img class="cs-img" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+                      
+<footer id="cs-footer-308">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="logo.png" alt="logo" width="178" height="32">
+            </a>
+            <p class="cs-text">
+    Welcome to Bean Boutique Coffee Shop, where passion meets perfection in every cup. We carefully source our beans from sustainable farms worldwide and roast them to bring out their unique flavors and aromas. Visit us for an exceptional coffee experience.
+</p>
+           
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Sitemap</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">About</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Coffee Shop</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Services</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Contact</a>
+            </li>
+        </ul>
+        
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+                <a class="cs-nav-link cs-phone" href="#">(123) 456-7890</a>
+            </li> 
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+                <a class="cs-nav-link cs-email" href="mailto:info@codestitch.com">info@beanboutique.shop</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+                <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener">
+                    123 Avenue Street<br> Oak Harbor, WA 98101
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href=""> Bean Boutique Coffee Shop </a></span>
+    </div>
+</footer>
+    <script>
+
+    
+        function moveCoffeeCarousel(direction) {
+            const carousel = document.querySelector('.coffee-carousel');
+            const totalSlides = document.querySelectorAll('.coffee-carousel-slide').length;
+    
+            currentSlide += direction;
+    
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1; // Loop to the last slide
+            } else if (currentSlide >= totalSlides) {
+                currentSlide = 0; // Loop to the first slide
+            }
+    
+            carousel.style.transform = `translateX(-${currentSlide * 320}px)`; // Adjust based on slide width
+        }
+    
+        function moveCoffeeCarouselPrev() {
+            moveCoffeeCarousel(-1); // Move to the previous slide
+        }
+    
+        function moveCoffeeCarouselNext() {
+            moveCoffeeCarousel(1); // Move to the next slide
+        }
+
+        let currentSlide = 0;
+
+function moveCarousel(direction) {
+    const carousel = document.querySelector('.carousel');
+    const totalSlides = document.querySelectorAll('.carousel-slide').length;
+
+    currentSlide += direction;
+
+    if (currentSlide < 0) {
+        currentSlide = totalSlides - 1; // Loop to the last slide
+    } else if (currentSlide >= totalSlides) {
+        currentSlide = 0; // Loop to the first slide
+    }
+
+    carousel.style.transform = `translateX(-${currentSlide * 320}px)`; // Adjust based on slide width
+}
+
+function moveCarouselPrev() {
+    moveCarousel(-1); // Move previous slide
+}
+
+function moveCarouselNext() {
+    moveCarousel(1); // Move next slide
+}
+
+        let index = 0;
+
+        function moveSlide(direction) {
+            const gallery = document.querySelector('.gallery');
+            const totalSlides = document.querySelectorAll('.gallery-item').length;
+
+            index += direction;
+
+            if (index < 0) {
+                index = totalSlides - 1; // Loop back to the last image
+            } else if (index >= totalSlides) {
+                index = 0; // Loop back to the first image
+            }
+
+            gallery.style.transform = `translateX(-${index * 320}px)`; // Adjust image width and margin
+        }
+
+        // Get elements
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeMenu = document.getElementById('closeMenu');
+const closeMenuList = document.getElementById('closeMenuList');
+
+// Open the mobile menu when the hamburger is clicked
+hamburger.addEventListener('click', function() {
+    mobileMenu.style.display = 'block'; // Show the mobile menu
+});
+
+// Close the mobile menu when the close button (inside the menu) is clicked
+closeMenu.addEventListener('click', function() {
+    mobileMenu.style.display = 'none'; // Hide the mobile menu
+});
+
+// Close the mobile menu when the close menu link (inside the menu) is clicked
+closeMenuList.addEventListener('click', function() {
+    mobileMenu.style.display = 'none'; // Hide the mobile menu
+});
+
+let currentIndex = 0; // Initialize the current slide index
+
+// Function to navigate through the slides
+function changeSlide(step) {
+    const sliderElement = document.querySelector('.slider');
+    const totalItems = document.querySelectorAll('.slider-item').length;
+
+    currentIndex += step; // Update the index based on the direction (forward or backward)
+
+    // Loop back if the index is out of bounds
+    if (currentIndex < 0) {
+        currentIndex = totalItems - 1; // Go to the last slide
+    } else if (currentIndex >= totalItems) {
+        currentIndex = 0; // Go to the first slide
+    }
+
+    // Adjust the slider's transform to shift the slide view
+    sliderElement.style.transform = `translateX(-${currentIndex * 320}px)`; // Adjust with appropriate width
+}
+
+   </script>
+
+</body>
+</html>

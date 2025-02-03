@@ -1,0 +1,1154 @@
+#hero {
+    position: relative;
+    width: 100%; /* Use 100% width for responsiveness */
+    height: 50vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media.istockphoto.com/id/919384646/photo/man-taking-his-order-at-a-coffee-shop.jpg?s=612x612&w=0&k=20&c=GFWMGtiEMvQ6rHDvl4PIa0JvryZ9tKzArtgaf8K9AsU=') no-repeat center center/cover;
+    z-index: -1;
+}
+#hero h1 {
+    font-family: Playwrite IT Moderna;
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pastries-menu h2, .breakfast-menu h2 , .special-bean-products h2, .coffee-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: Playwrite IT Moderna;
+    color: #d32f2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Coffee Menu Styling */
+.coffee-menu, .breakfast-menu {
+    text-align: center;
+}
+
+.order-page .coffee-menu .product-grid-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.order-page .breakfast-menu .product-grid-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.order-page .pastries-menu .product-grid-container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.order-page .special-bean-products .product-grid-container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.order-page .coffee-menu .product-grid-container .product-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.order-page .pastries-menu .product-grid-container .product-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.order-page .breakfast-menu .product-grid-container .product-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.order-page .coffee-menu .product-grid-container .product-grid  .product-card {  
+    flex: 0 0 auto;
+    width: 250px;
+    height: 320px;
+    margin-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+.order-page .special-bean-products .product-grid-container .product-grid  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 320px;
+    margin-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.order-page .breakfast-menu .product-grid-container .product-grid  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 320px;
+    margin-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.order-page .pastries-menu .product-grid-container .product-grid  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 320px;
+    margin-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+.product-card img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-family: Playwrite HR Lijeva;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-card p strong {
+    color: #d32f2f;
+}
+
+.product-card .add-to-cart {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #d32f2f;
+}
+
+.product-card .add-to-cart:active {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #d32f2f;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+ .prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+/* Styling for Previous and Next Buttons */
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .product-grid {
+        flex-wrap: wrap;
+    }
+}
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the breakfast menu */
+.breakfast-menu {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.breakfast-menu .product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-family: Playwrite HR Lijeva;
+    color: black;
+}
+.product-card p {
+    font-size: 1.1rem;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-card p strong {
+    color: #d32f2f;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+    .product-grid {
+        flex-wrap: wrap;
+    }
+
+    .prev, .next {
+        font-size: 1.5rem;
+    }
+}
+.special-bean-products {
+    padding: 20px;
+    text-align: center;
+}
+
+.special-bean-products .product-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.special-bean-products .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.special-bean-products .product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-family: Playwrite IT Moderna;
+    color: #333;
+}
+
+.special-bean-products .product-card p {
+    font-size: 1.0rem;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.special-bean-products .product-card p strong {
+    color: #d32f2f;
+}
+
+.special-bean-products .product-card .add-to-cart {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.special-bean-products .product-card .add-to-cart:hover {
+    background-color: #d32f2f;
+}
+
+.special-bean-products .product-card .add-to-cart:active {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #d32f2f;
+}
+
+.special-bean-products .prev, .special-bean-products .next {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.special-bean-products .prev:hover, .special-bean-products .next:hover{
+    background-color: #000000;
+}
+
+.special-bean-products .prev {
+    left: 0;
+}
+
+.special-bean-products .next {
+    right: 0;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .special-bean-products .product-card {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .special-bean-products .product-grid {
+        flex-wrap: wrap;
+    }
+}
+
+.pastries-menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.pastries-menu .product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-family: Playwrite HR Lijeva;
+    color: #333;
+}
+
+.pastries-menu .product-card p {
+    font-size: 1.1rem;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pastries-menu .product-card p strong {
+    color: #d32f2f;
+}
+
+
+.pastries-menu .prev, .pastries-menu .next {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.pastries-menu .prev:hover, .pastries-menu .next:hover {
+    background-color: black;
+}
+
+.pastries-menu .prev {
+    left: 0;
+}
+
+.pastries-menu .next {
+    right: 0;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .pastries-menu .product-card {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .pastries-menu .product-grid {
+        flex-wrap: wrap;
+    }
+    .pastries-menu h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-family: Playwrite IT Moderna;
+        color: #333;
+        padding-left: 20px;
+        margin-left: 50px;
+        left: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .prev, .next {
+        font-size: 1.5rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .pastries-menu h2, .breakfast-menu h2, .special-bean-products h2, .coffee-menu h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+  /* Cart summary */
+  .cart-summary {
+   
+    background-color: #f9f9f9;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    border: 2px solid #d32f2f;
+    align-items: center;
+    justify-content: center;
+     margin-top: 5rem;
+     margin-bottom: 5rem;
+  }
+  .cart-summary h3, .payment-section h3 {
+    margin-bottom: 5px;
+    font-size: 2.0rem;
+    font-family: Playwrite IT Moderna;
+  }
+
+
+
+  #cart-items {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.2rem;
+  }
+  
+  button#checkout {
+    background-color: black;
+    border: none;
+    font-family: playwrite IT Moderna;
+    color: white;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button#checkout:hover, button#checkout:active {
+    background-color:white;
+    color: black;
+    border: 1px solid #000;
+  }
+  
+.cart-summary h3 {
+    margin-bottom: 20px;
+}
+
+.cart-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-summary ul li {
+    margin-bottom: 10px;
+}
+
+
+.payment-section {
+    background-color: #f9f9f9;            
+    margin-left: 90px;
+    padding: 20px;
+    border-radius: 10px;
+      width: 500px;
+    height: 220px;
+    border: 2px solid #d32f2f;
+    align-items: center;
+    justify-content: center;
+     margin-top: 5rem;
+     margin-bottom: 5rem;
+     
+}
+.hidden {
+    display: none;
+}
+label {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serifs;
+}
+#currency {
+    padding: 5px;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    color: #d32f2f;
+    margin-top: 10px;
+}
+#bill-details {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.2rem;
+     color: #000000;
+}
+.payment-submit {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.payment-submit:active, .payment-submit:hover {
+   border: 1px solid #d32f2f;
+   background-color: white;
+   color:black;
+}
+#cart-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.delivery-section {
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+.delivery-section label {
+    font-size: 1.9rem;
+    color: black;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.delivery-section #delivery{
+    font-size: 1.2rem;
+    color: black;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.delivery-section #delivery option {
+    font-size: 1.0rem;
+    color: black;
+    font-family:Playwrite IT Moderna ;    
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.popup-content h3  {
+    font-size: 1.5rem;
+    color: black;
+    font-family: Playwrite IT Moderna;
+    margin-bottom: 20px;    
+}
+.popup-content p{
+    font-family: Playwrite IT Moderna;
+    font-size: 1.0rem;
+    color: black;
+}
+.popup-content img {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    height: auto;
+}
+#close-pickup-popup, #close-delivery-popup {
+    position: absolute;
+    top: 20px;
+    background-color: #d32f2f;
+    color: #fff;
+    font-family: Playwrite IT Moderna;
+    right: 30px;
+    width: 20px;
+    border-radius: 50%;
+    padding-right: 15px;
+    padding-left: 5px;
+    text-align: center;
+}
+#delivery-section label {
+    font-size: 1.2rem;
+    font-family: Playwrite IT Moderna;
+    margin-top: 10px;
+}
+#delivery-section input{
+    padding: 10px;
+    border-radius: 0px;
+    margin-top: 10px;
+    border: 1px solid #d32f2f;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#delivery-section #done-location{
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 80px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 5px;
+    font-family: Playwrite IT Moderna;
+}
+
+
+
+/* Style for the discount ad */
+.discount-ad {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+.discount-ad p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-family: Playwrite IT Moderna;
+}
+.discount-ad button {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.discount-ad button:hover, .discount-ad button:active {
+    background-color: #f04e64;
+}
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-footer-308 {
+        padding: var(--sectionPadding);
+        background-color: #1a1a1a;
+        /* Navigation Links */
+    }
+    #cs-footer-308 .cs-container {
+        width: 100%;
+        /* reset on desktop */
+        max-width: 43.75rem;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+    #cs-footer-308 .cs-logo-group {
+        /* takes up all the space, lets the other ul's wrap below it */
+        width: 100%;
+        position: relative;
+    }
+    
+    #cs-footer-308 .cs-logo {
+        width:40px;
+        align-items: center;
+        height: 35px;
+        margin-left: 100px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        padding-bottom: 50px;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    #cs-footer-308 .cs-logo-img {
+        width: 100%;
+        height: auto;
+    }
+    #cs-footer-308 .cs-logo-img.dark {
+        display: none;
+    }
+    #cs-footer-308 .cs-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        width: 78%;
+        /* changes to 305px at desktop */
+        max-width: 26.25rem;
+        color: white;
+    }
+    #cs-footer-308 .cs-nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    #cs-footer-308 .cs-nav-li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #cs-footer-308 .cs-header {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color:white;
+        position: relative;
+        display: block;
+    }
+    #cs-footer-308 .cs-nav-link {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        color: white;
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s;
+    }
+    #cs-footer-308 .cs-nav-link:before {
+        /* underline */
+        content: "";
+        width: 0%;
+        height: 0.125rem;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+    #cs-footer-308 .cs-nav-link:hover {
+        color: white;
+    }
+    #cs-footer-308 .cs-nav-link:hover:before {
+        width: 100%;
+    }
+    #cs-footer-308 .cs-icon {
+        width: 1.5rem;
+        height: auto;
+        margin-right: 0.75rem;
+    }
+    #cs-footer-308 .cs-bottom {
+        max-width: 80rem;
+        margin: auto;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #484848;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cs-footer-308 .cs-copyright,
+    #cs-footer-308 .cs-copyright-link {
+        font-size: 1rem;
+        line-height: 1.5em;
+        color: white;
+    }
+    #cs-footer-308 .cs-copyright-link {
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    #cs-footer-308 .cs-copyright-link:hover {
+        color: white;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cs-footer-308 .cs-container {
+        row-gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 2.5rem;
+    }
+    #cs-footer-308 .cs-nav {
+        width: auto;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-footer-308 .cs-container {
+        max-width: 80rem;
+        flex-wrap: nowrap;
+        /* align everything to the right */
+        justify-content: flex-end;
+        column-gap: 5.25rem;
+    }
+    #cs-footer-308 .cs-logo-group {
+        width: 30%;
+        max-width: 24.1875rem;
+        /* pushes away from everything to the right */
+        margin-right: auto;
+    }
+    #cs-footer-308 .cs-text {
+        width: 100%;
+    }
+}
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+ }
+ .cs-logo-group {
+    margin-top: 20px;
+    padding-top: 20px;
+ }
+ .cs-nav-li .cs-header {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.cs-copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Basic styles for the navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    font-family: Playwrite HR Lijeva;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+
+}
+
+.navbar .logo a {
+    color: #ff6a3e;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ff6a3e;
+}
+
+.nav-links a:active {
+    color: #ff6a3e;
+}
+
+.order-btn {
+    color: #ff6a3e;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.order-btn a {
+    color: #ff6a3e;
+    padding: 5px;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.order-btn:hover {
+    background-color: #ff6a3e;
+}
+
+.order-btn:active {
+    background-color: #ff6a3e;
+}
+
+.order-btn a:active {
+    color: white;
+}
+
+.order-btn a:hover {
+    color: white;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.mobile-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-nav-links li {
+    margin: 20px 0;
+}
+
+.mobile-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Close Button for Mobile Menu */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-btn i {
+    font-size: 30px;
+}
+
+/* Close Menu Link inside Mobile Menu */
+.close-menu {
+    margin-top: 20px;
+}
+
+.close-menu a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.close-menu a:hover {
+    color: #ff0000;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Dropdown Menu on Mobile */
+    .mobile-nav-links .dropdown-content {
+        position: static;
+        background-color: transparent;
+        width: 100%;
+        display: none;
+        text-align: left;
+    }
+
+    .mobile-nav-links .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .mobile-nav-links .dropdown-content a {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the desktop navigation links */
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger menu */
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .mobile-menu {
+        display: flex; /* Show the mobile menu */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Slightly darker background for better contrast */
+        z-index: 1000;
+        padding-top: 60px;
+    }
+
+    .mobile-nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .mobile-nav-links li {
+        margin: 20px 0;
+    }
+
+    .mobile-nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        transition: color 0.3s ease; /* Smooth transition for hover effects */
+    }
+
+    .mobile-nav-links a:hover {
+        color: #ff6a3e; /* Highlight color on hover */
+    }
+
+    /* Dropdown Menu on Mobile */
+    .mobile-nav-links .dropdown-content {
+        position: static;
+        background-color: transparent;
+        width: 100%;
+        display: none;
+        text-align: left;
+    }
+
+    .mobile-nav-links .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .mobile-nav-links .dropdown-content a {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    /* Close Button for Mobile Menu */
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .close-btn:hover {
+        color: #ff6a3e; /* Change color on hover */
+    }
+}
